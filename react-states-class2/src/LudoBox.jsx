@@ -15,7 +15,24 @@ export default function LudoBox() {
 
         console.log(`moves.yellow ${moves.yellow}`);
         setMoves((prevMoves)=>{
-         return { ...prevMoves, blue: prevMoves.yellow + 1 }
+         return { ...prevMoves, yellow: prevMoves.yellow + 2 }
+        }); // whenever you update the object use to  do sperate 
+
+    }
+
+    let updategreen = () => {
+
+        console.log(`moves.green ${moves.green}`);
+        setMoves((prevMoves)=>{
+         return { ...prevMoves, green: prevMoves.green + 1 }
+        }); // whenever you update the object use to  do sperate 
+
+    }
+    let updateRed = () => {
+
+        console.log(`moves.Red ${moves.Red}`);
+        setMoves((prevMoves)=>{
+         return { ...prevMoves, Red: prevMoves.Red + 1 }
         }); // whenever you update the object use to  do sperate 
 
     }
@@ -32,10 +49,10 @@ export default function LudoBox() {
                 <button style={{ backgroundColor: "yellow" }}onClick={updateyellow} >+2</button>
 
                 <p>Green move = {moves.green}</p>
-                <button style={{ backgroundColor: " green" }}>+1</button>
+                <button style={{ backgroundColor: " green" }}onClick={updategreen}>+1</button>
 
                 <p>Red move = {moves.red}</p>
-                <button style={{ backgroundColor: "red" }}>+1</button>
+                <button style={{ backgroundColor: "red" }}onClick={updateRed}>+1</button>
             </div>
         </div>
 
