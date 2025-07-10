@@ -1,0 +1,12 @@
+.Product{
+    border:1px solid white;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    /* padding:0 10px  0 10px; */
+    color: rgb(11, 11, 15);
+    border-color: rgb(0, 0, 0);
+    text-overflow: clip;
+    margin-left: 15px;
+    width: 250px;
+    height: 200px;
+}
